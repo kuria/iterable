@@ -1,0 +1,22 @@
+{
+    "name": "kuria/iterable",
+    "description": "Utilities for dealing with PHP's iterators and the iterable type",
+    "keywords": ["iterable", "iterator", "array", "convert", "caching"],
+    "license": "MIT",
+    "require": {
+        "php": ">=7.1"
+    },
+    "require-dev": {
+        "kuria/dev-meta": "^0.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "Kuria\\Iterable\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Kuria\\Iterable\\": "tests"
+        }
+    }
+}
