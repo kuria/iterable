@@ -14,7 +14,7 @@ class IterableHelperTest extends Test
         $this->assertSame($expectedResult, IterableHelper::toArray($iterable));
     }
 
-    function provideIterablesForArrayConversion(): array
+    function provideIterablesForArrayConversion()
     {
         return [
             // iterable, expectedResult
@@ -67,7 +67,7 @@ class IterableHelperTest extends Test
         $this->assertSame($expectedResult, IterableHelper::toList($iterable));
     }
 
-    function provideIterablesForListConversion(): array
+    function provideIterablesForListConversion()
     {
         return [
             // iterable, expectedResult

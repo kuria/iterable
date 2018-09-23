@@ -41,7 +41,7 @@ class CachingIteratorTest extends Test
         $this->assertNull($cachingIterator->current());
     }
 
-    function provideTraversables(): array
+    function provideTraversables()
     {
         $object = new \stdClass();
 
