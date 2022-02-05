@@ -42,21 +42,25 @@ class CachingIterator implements \Iterator, \Countable
         }
     }
 
+    #[\ReturnTypeWillChange]
     function valid()
     {
         return isset($this->pairs[$this->offset]);
     }
 
+    #[\ReturnTypeWillChange]
     function key()
     {
         return $this->pairs[$this->offset][0] ?? null;
     }
 
+    #[\ReturnTypeWillChange]
     function current()
     {
         return $this->pairs[$this->offset][1] ?? null;
     }
 
+    #[\ReturnTypeWillChange]
     function next()
     {
         if (!isset($this->pairs[$this->offset])) {
@@ -83,11 +87,13 @@ class CachingIterator implements \Iterator, \Countable
         $this->offset = $nextPairOffset;
     }
 
+    #[\ReturnTypeWillChange]
     function rewind()
     {
         $this->offset = 0;
     }
 
+    #[\ReturnTypeWillChange]
     function count()
     {
         if ($this->inner !== null) {
